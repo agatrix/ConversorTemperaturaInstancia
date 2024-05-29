@@ -31,7 +31,12 @@ public class ConversorTemperaturaInstancia {
         return (this.valor + 273.15);
     }
     
+     public double celsiusParaF() throws Exception{
+        if(this.valor < -273.15)
+            throw new Exception("O valor passado é menor que o Zero Absoluto");
     
+        return (this.valor*9/5) + 32;
+    }
     
     
 }
