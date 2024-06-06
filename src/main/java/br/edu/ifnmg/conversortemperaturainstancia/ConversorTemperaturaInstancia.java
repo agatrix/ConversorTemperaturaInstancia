@@ -37,6 +37,20 @@ public class ConversorTemperaturaInstancia {
     
         return (this.valor*9/5) + 32;
     }
+     
+    public double fahrenheitParaC() throws Exception {
+        if(this.valor < -459.67)
+            throw new Exception("O valor passado é menor que o Zero Absoluto");
+          
+        return ((this.valor - 32) * 5/9);
+    }
+    
+    public double fahrenheitParaK() throws Exception{
+        if(this.valor < -459.67)
+            throw new Exception("O valor passado é menor que o Zero Absoluto");
+        
+        return (this.valor-32)*5/9+273.15;
+    }
     
     
 }

@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Valor: "+valor.getValor());
         
         try{
-            System.out.println("Celsius para Kelvin: "+valor.celsiusParaK());
+            System.out.println("Celsius para K: "+valor.celsiusParaK());
         }
         catch (Exception e){
             System.out.println("Erro: "+e.getMessage());
@@ -23,5 +23,18 @@ public class Main {
             System.out.println("Erro: "+e.getMessage());
         }
         
+        try{
+            System.out.println("fahrenheit para C: "+valor.fahrenheitParaC());
+        }
+        catch (Exception e){
+            System.out.println("Erro: "+e.getMessage());
+        }
+        try{
+            System.out.println("fahrenheit para K: "+valor.fahrenheitParaK());
+        }
+        catch (Exception e){
+            System.out.println("Erro: "+e.getMessage());
+        }
     }
 }
+
